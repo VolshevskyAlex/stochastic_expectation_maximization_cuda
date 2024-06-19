@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="gen_random_clouds.cpp" />
+    <ClCompile Include="simulation.cpp" />
+    <ClCompile Include="cov_inv.cpp">
+      <Filter>EM</Filter>
+    </ClCompile>
+    <ClCompile Include="render_tables.cpp" />
+    <ClCompile Include="gui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="param2.h" />
+    <ClInclude Include="paramgl2.h" />
+    <ClInclude Include="k_means.h">
+      <Filter>EM</Filter>
+    </ClInclude>
+    <ClInclude Include="k_means_impl.h">
+      <Filter>EM</Filter>
+    </ClInclude>
+    <ClInclude Include="em.h">
+      <Filter>EM</Filter>
+    </ClInclude>
+    <ClInclude Include="em_impl.h">
+      <Filter>EM</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation.h" />
+    <ClInclude Include="cov_inv.h">
+      <Filter>EM</Filter>
+    </ClInclude>
+    <ClInclude Include="gen_random_clouds.h" />
+    <ClInclude Include="render_tables.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="em3.cu" />
+    <CudaCompile Include="gen_gmm_gpu.cu" />
+    <CudaCompile Include="cvt.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="EM">
+      <UniqueIdentifier>{3b4d5368-33d9-4332-a2e2-f5c284ac3569}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
